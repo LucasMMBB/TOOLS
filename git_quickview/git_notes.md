@@ -7,3 +7,8 @@ Git commands quick check
 3. Use `-<number>` to limits the output. Such as `git log -p -3`
 4. `git log --stat` show a brief log
 
+#### Undo commits
+Using the below command for undoing commits
+```sh
+git commit --amend
+```
