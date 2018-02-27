@@ -32,3 +32,5 @@ git config --global alias.co checkout
 git config --gloable alias.st status
 ```
 
+#### Git branch
+Switch branches: `git checkout <branchname>`
