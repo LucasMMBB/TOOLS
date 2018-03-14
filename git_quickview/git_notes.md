@@ -40,3 +40,5 @@ Switch branches: `git checkout <branchname>`
 2. cherry pick your patch `git cherry-pick <commitid>`
 3. Use 'git log' to see if you cherry-pick successfully or not.
 4. If you don't want to use this commit. There are several ways to abort your cherry-picked commit
+    - Use `git cherry-pick abort` to abort your cherry-picked commit
+    - Reset your HEAD back`git reset HEAD~1 --hard`
