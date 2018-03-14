@@ -34,3 +34,9 @@ git config --gloable alias.st status
 
 #### Git branch
 Switch branches: `git checkout <branchname>`
+
+#### How to cherry pick commits
+1. choose your branch or tag `git checkout <branch>/<tag>`
+2. cherry pick your patch `git cherry-pick <commitid>`
+3. Use 'git log' to see if you cherry-pick successfully or not.
+4. If you don't want to use this commit. There are several ways to abort your cherry-picked commit
