@@ -42,3 +42,44 @@ Switch branches: `git checkout <branchname>`
 4. If you don't want to use this commit. There are several ways to abort your cherry-picked commit
     - Use `git cherry-pick abort` to abort your cherry-picked commit
     - Reset your HEAD back`git reset HEAD~1 --hard`
+
+### Git stash
+1. store current change `git stash`
+#### restore current change 
+```
+git stash pop
+```
+or
+```
+git stash apply
+git stash drop
+```
+`git stash apply` is used to restore the stash but it won't delete in stash
+`git stash drop` is used delete stashed changes after you apply stashed changes
+#### clear the stash
+```
+git stash clear
+```
+
+### Version reverse
+Go back to previous version
+```
+git reset --hard HEAD
+```
+
+Go backto specific version
+```
+git reset --hard <version id>
+```
+
+check previous versions(commits from your self)
+```
+git reflog
+```
+
+check all commits(all the commits from all contributers)
+```
+git log
+```
+
+
