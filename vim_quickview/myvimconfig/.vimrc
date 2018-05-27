@@ -1,11 +1,18 @@
 """"""""""""""""""""""""""""""""""""""""
 " Maoxu's vim configuration file
+"
 """"""""""""""""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""""""""""""
 " baisc setup
 """"""""""""""""""""""""""""""""""""""""
 execute pathogen#infect()
+" enter the current millenium
+set nocompatible
+
+" enable syntax and plugins (for netrw)
+syntax enable
+filetype plugin on
 
 " color scheme"
 colo gruvbox
@@ -25,6 +32,16 @@ set hlsearch
 
 " make searches case insensitive
 set ignorecase
+
+"""""""""""""""""""""""""""""""""""""""
+" => Finding files
+"""""""""""""""""""""""""""""""""""""""
+set path+=**
+
+" turn on wildmenu and use
+set wildmenu
+
+" use :b to go to open files in vim buffer
 
 """""""""""""""""""""""""""""""""""""""
 " =>  Text, tab and indent related
@@ -47,6 +64,17 @@ set ai "Auto indent
 set si "Smart indent
 set wrap "Wrap lines
 
-" I installed the following plugins
-" pathogen - my first plugin and use it as a package manager for vim
+" AUTOCOMPLETE
+"
+" - ^x^n for JUST this file
+" - ^x^f for filenames
+" - ^x^] for tags only
+" - ^n for anything specified by the 'complete' option
+" - NOW WE CAN use ^n and ^p to go back and forth in the suggest list
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" pathogen - Package manager for vim
 " NERD tree - A tree explorer plugin
+" """"""""""""""""""""""""""""""""""""""""""""""""""""""
